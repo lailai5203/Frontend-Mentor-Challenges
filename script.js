@@ -6,18 +6,18 @@ const projects = [
 
 const list = document.getElementById('list');
 
-projects.forEach(project => {
-    const listItem = document.createElement('li');
-    const link = document.createElement('a');
-    link.href = `/${project}/index.html`;
-    link.innerText = formatProjectName(project);
+projects.forEach(project, i) => {
+const listItem = document.createElement('li');
+const link = document.createElement('a');
+link.href = `/${project}/index.html`;
+link.innerText = `s{i+1}. ${formatProjectName(project)}`;
 
-    const img = document.createElement('img');
-    img.src = `/${project}/design/desktop-design.jpg`;
+const img = document.createElement('img');
+img.src = `/${project}/design/desktop-design.jpg`;
 
-    listItem.appendChild(img);
-    listItem.appendChild(link);
-    list.appendChild(listItem);
+link.prepend(img);
+listItem.appendChild(link);
+list.appendChild(listItem);
 
 
 
