@@ -1,7 +1,7 @@
 const projects = [
-    '1_Single%20price%20grid%20component',
-    '2_Base%20Apparel%20coming%20soon%20page%20',
-    '3_Four%20Card%20Feature%20Section'
+    'Single-Price-Grid-Component',
+    'Base-Apparel-Coming-Soon-Page',
+    'Four-Card-Feature-Section'
 ];
 
 const list = document.getElementById('list');
