@@ -39,8 +39,6 @@ ul li a {
 }
 
 ul li a img {
-    max-width: 100%;
-
     display: block;
     width: 400px;
     height: 300px;
