@@ -6,24 +6,11 @@ const projects = [
 
 const list = document.getElementById('list');
 
-projects.forEach(project, i) => {
-const listItem = document.createElement('li');
-const link = document.createElement('a');
-link.href = `/${project}/index.html`;
-link.innerText = `s{i+1}. ${formatProjectName(project)}`;
+projects.forEach(project => {
+    const link = document.createElement('a');
+    link.href = `/${project}/index.html`;
+    link.innerText = project;
 
-const img = document.createElement('img');
-img.src = `/${project}/design/desktop-design.jpg`;
-
-link.prepend(img);
-listItem.appendChild(link);
-list.appendChild(listItem);
-
-
-
+    list.appendChild(link);
 
 });
-
-function formatProjectName(name) {
-    return name.split('-').map(word => word[0].toUpperCase() + word.slice(1)).join(' ');
-}
