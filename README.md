@@ -1,5 +1,5 @@
 # frontend-mentor-challenges
-My submissions for the Frontend Mentor Challenges
+My submissions for the Frontend Mentor Challenges.<br>
 I'm also challenging #100daysofcode
 
 Wish me Luck!
