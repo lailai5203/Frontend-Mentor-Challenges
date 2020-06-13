@@ -94,7 +94,6 @@ button {
     .flex > div:first-child {
         flex: 1;
         margin-right: 0px;
-
     }
 
     .flex > div:last-child {
