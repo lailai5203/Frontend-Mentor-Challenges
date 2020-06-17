@@ -3,7 +3,8 @@ const projects = [
     'base-apparel-coming-soon-page',
     'four-card-feature-section',
     'huddle-landing-page-with-single-introductory-section-master',
-    'huddle-landing-page-with-alternating-feature-blocks-master'
+    'huddle-landing-page-with-alternating-feature-blocks-master',
+    'clipboard-landing-page-master'
 ];
 
 const list = document.getElementById('list');
