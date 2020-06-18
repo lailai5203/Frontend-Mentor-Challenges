@@ -2,9 +2,9 @@ const projects = [
     'single-price-grid-component',
     'base-apparel-coming-soon-page',
     'four-card-feature-section',
-    'huddle-landing-page-with-single-introductory-section-master',
-    'huddle-landing-page-with-alternating-feature-blocks-master',
-    'clipboard-landing-page-master'
+    'huddle-landing-page-with-single-introductory-section',
+    'huddle-landing-page-with-alternating-feature-blocks',
+    'clipboard-landing-page'
 ];
 
 const list = document.getElementById('list');

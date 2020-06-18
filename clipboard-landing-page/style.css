@@ -10,7 +10,7 @@
     --strong-cyan: hsl(171, 66%, 44%);
     --light-blue: hsl(233, 100%, 69%);
     --dark-grayish-blue: hsl(210, 10%, 33%);
-    --grayish-blue: hsl(201, 2%, 89%);
+    --grayish-blue: hsl(201, 11%, 66%);
 }
 
 body {
@@ -23,33 +23,47 @@ body {
 header {
     background-image: url(images/bg-header-desktop.png);
     background-size: cover;
-    padding: 80px 0 40px;
+    padding: 80px 0 20px;
 }
 
 img {
     max-width: 100%;
+}
 
+p {
+    line-height: 1.5;
+    color: var(--grayish-blue);
 }
 
 .container {
     width: 1200px;
     max-width: 100%;
-    margin: 40px auto;
+    margin: 30px auto;
+    padding: 0 20px;
 }
 
 .container-small {
     width: 700px;
 }
 
+section {
+    padding: 30px 0;
+}
+
 .flex {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .flex > * {
     flex: 1;
     padding: 10px;
+}
+
+.m4 {
+    margin: 100px auto;
 }
 
 .btn {
@@ -73,7 +87,7 @@ img {
 }
 
 footer {
-    background-color: var(--grayish-blue);
+    background-color: hsl(201, 2%, 89%);
 }
 
 footer .container {
@@ -106,10 +120,25 @@ footer ul a {
 }
 
 footer .social li {
-    margin-right: 10px;
+    margin-right: 0 5px;
 }
 
 footer .social a {
     font-size: 24px;
     margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    footer .links {
+        flex-direction: column;
+    }
+
+    footer .links li {
+        padding: 10px;
+        margin-right: 0;
+    }
 }
